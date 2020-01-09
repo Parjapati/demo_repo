@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main()
+{
+    int i ,j,k=0;
+    for(i=0;i<5;i++)
+    {
+        k=1;
+        for(j=0;j<9;j++)
+        {
+            if(j>=6-i&&j<=4+i&&k)
+            {
+             printf("*");
+             k=0;
+            }
+            else
+            {
+                printf(" ");
+                k=1;
+            }
+
+        }
+    printf("\n");
+    }
+}
